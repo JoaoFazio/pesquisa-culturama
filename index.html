@@ -11,46 +11,46 @@
     </header>
     <section>
         <form action="" method="get">
-            <!-- <fieldset>
+            <fieldset>
 
                 <legend>Dados Pessoais</legend>
-                <label for="userName">Nome:</label>
-                <input type="text" name="userName" required>
+                <label for="name">Nome:</label>
+                <input id="name" type="text" name="userName" required>
                 <br>
-                <label for="userAge">Idade:</label>
-                <input type="number" name="age" min="12" max="100" required>
+                <label for="age">Idade:</label>
+                <input id="age" type="number" name="age" min="12" max="100" required>
                 <br>
-                <label for="birthdate">Data de Nascimento:</label>
-                <input type="date" name="birthdate" required>
+                <label for="birthDate">Data de Nascimento:</label>
+                <input id="birthDate" type="date" name="userBirthdate" required>
                 <br>
-                <label for="userEmail">Email:</label>
-                <input type="email" name="userEmail" required>
+                <label for="email">Email:</label>
+                <input id="email" name="userEmail" required>
                 <br>
-                <label for="userPhoneNumber">Telefone:</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen">
+                <label for="phoneNumber">Telefone:</label>
+                <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen">
                 <br>
-                <label for="userImage">Upload de foto:</label>
-                <input type="file" accept="image/*" name="userImage">
+                <label for="image">Upload de foto:</label>
+                <input id="image" type="file" accept="image/*" name="userImage">
                 <br>
             </form>
-        </fieldset> -->
+        </fieldset>
 
             <fieldset>
                 <legend>Perfil</legend>
 
                 <p>Gênero:</p>
-                <input type="radio" name="userGender" value="Feminino">
-                <label for="userGender">Feminino</label>
+                <input id="fem" type="radio" name="userGender" value="Feminino">
+                <label for="fem">Feminino</label>
 
-                <input type="radio" name="userGender" value="Masculino">
-                <label for="userGender">Masculino</label>
+                <input id="masc" type="radio" name="userGender" value="Masculino">
+                <label for="masc">Masculino</label>
                 
-                <input type="radio" name="userGender" value="notInformed">
-                <label for="userGender">Prefiro não dizer</label>
+                <input id="notInformed" type="radio" name="userGender" value="notInformed">
+                <label for="notInformed">Prefiro não dizer</label>
                 <br>
 
                 <label for="maritalStatus">Estado Civil:</label>
-                <select name="maritalStatus">
+                <select id="maritalStatus" name="userMaritalStatus">
                     <option value="notInformed">Selecione...</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>
@@ -58,8 +58,8 @@
                     <option value="viuvo">União estável</option>
                 </select>
 
-                <label for="userState">Estado:</label>
-                <select name="userState" required>
+                <label for="state">Estado:</label>
+                <select id="state" name="userState" required>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
@@ -89,11 +89,46 @@
                     <option value="tocantins">Tocantins</option>
                 </select>
 
-                <label for="userCity">Cidade:</label>
-                <input type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.:Fortaleza">
+                <label for="city">Cidade:</label>
+                <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.:Fortaleza">
 
             </fieldset>
         
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais:</p>
+                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <label for="instagram">Instagram</label>
+                <br>
+                <input id="facebook" type="checkbox" name="social" value="facebook">
+                <label for="facebook">Facebook</label>
+                <br>
+                <input id="X" type="checkbox" name="social" value="X">
+                <label for="X">X</label>
+                <br>
+                <input id="tiktok" type="checkbox" name="social" value="tiktok">
+                <label for="tiktok">TikTok</label>
+                <br>
+                <input id="youtube" type="checkbox" name="social" value="youtube">
+                <label for="youtube">YouTube</label>
+                <br>
+                <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                <label for="linkedin">LinkedIn</label>
+                <br>
+                <label for="musicStyle">Estilo musical:</label>
+                <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text">
+                <datalist id="styleTypes">
+                    <option value="Rock">
+                    <option value="Pop">
+                    <option value="Funk">
+                    <option value="Sertanejo">
+                    <option value="MPB">
+                </datalist>
+                <br>
+                <label for="color">Cor favorita:</label>
+                <input type="color" name="userFavoriteColor" id="favoriteColor">
+
+            </fieldset>
         <button type="submit">Enviar</button>
 
 
