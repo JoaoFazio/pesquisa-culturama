@@ -12,7 +12,7 @@
     <section>
         <form action="" method="get">
             <fieldset>
-
+                
                 <legend>Dados Pessoais</legend>
                 <label for="name">Nome:</label>
                 <input id="name" type="text" name="userName" required>
@@ -32,23 +32,22 @@
                 <label for="image">Upload de foto:</label>
                 <input id="image" type="file" accept="image/*" name="userImage">
                 <br>
-            </form>
-        </fieldset>
-
+            </fieldset>
+            
             <fieldset>
                 <legend>Perfil</legend>
-
+        
                 <p>Gênero:</p>
                 <input id="fem" type="radio" name="userGender" value="Feminino">
                 <label for="fem">Feminino</label>
-
+        
                 <input id="masc" type="radio" name="userGender" value="Masculino">
                 <label for="masc">Masculino</label>
                 
                 <input id="notInformed" type="radio" name="userGender" value="notInformed">
                 <label for="notInformed">Prefiro não dizer</label>
                 <br>
-
+        
                 <label for="maritalStatus">Estado Civil:</label>
                 <select id="maritalStatus" name="userMaritalStatus">
                     <option value="notInformed">Selecione...</option>
@@ -57,7 +56,7 @@
                     <option value="divorciado">Divorciado</option>
                     <option value="viuvo">União estável</option>
                 </select>
-
+        
                 <label for="state">Estado:</label>
                 <select id="state" name="userState" required>
                     <option value="acre">Acre</option>
@@ -88,12 +87,12 @@
                     <option value="sergipe">Sergipe</option>
                     <option value="tocantins">Tocantins</option>
                 </select>
-
+        
                 <label for="city">Cidade:</label>
                 <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.:Fortaleza">
-
-            </fieldset>
         
+            </fieldset>
+
             <fieldset>
                 <legend>Hábitos</legend>
                 <p>Redes Sociais:</p>
@@ -127,30 +126,46 @@
                 <br>
                 <label for="color">Cor favorita:</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
-
+        
             </fieldset>
-        <button type="submit">Enviar</button>
 
-        <fieldset>
-            <legend>Sessão de opinião</legend>
-            <label for="satisfaction">Escala de satisfação:</label>
-            <br>
-            <input type="radio" id="satisfaction1" name="userSatisfaction" value="otima">
-            <label for="satisfaction1">Ótima</label>
-            <br>
-            <input type="radio" id="satisfaction2" name="userSatisfaction" value="boa">
-            <label for="satisfaction2">Boa</label>
-            <br>
-            <input type="radio" id="satisfaction3" name="userSatisfaction" value="regular">
-            <label for="satisfaction3">Regular</label>
-            <br>
-            <input type="radio" id="satisfaction4" name="userSatisfaction" value="ruim">
-            <label for="satisfaction4">Ruim</label>
-            <br>
-            <label for="comments">Escreva sua opinião:</label>
-            <textarea id="comments" name="userComments" placeholder="Deixe aqui suas sugestões."></textarea>
-        </fieldset>
+            <fieldset>
+                <legend>Sessão de opinião</legend>
+                <label for="satisfaction">Escala de satisfação:</label>
+                <br>
+                <input type="radio" id="satisfaction1" name="userSatisfaction" value="otima">
+                <label for="satisfaction1">Ótima</label>
+                <br>
+                <input type="radio" id="satisfaction2" name="userSatisfaction" value="boa">
+                <label for="satisfaction2">Boa</label>
+                <br>
+                <input type="radio" id="satisfaction3" name="userSatisfaction" value="regular">
+                <label for="satisfaction3">Regular</label>
+                <br>
+                <input type="radio" id="satisfaction4" name="userSatisfaction" value="ruim">
+                <label for="satisfaction4">Ruim</label>
+                <br>
+                <label for="comments">Escreva sua opinião:</label>
+                <textarea id="comments" name="userComments" placeholder="Deixe aqui suas sugestões."></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Confirmações</legend>
+                
+                <input type="checkbox" name="userLGPD" id="userLgpdTerm" value="accepted" required>
+                <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
+                <br>
+                
+                <input type="checkbox" name="userGetResult" id="userGetResult" value="accepted">
+                <label for="userLgpdTerm">Desejo receber o resultado por email</label>
+                <br>
+                
+            </fieldset>
+            
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
 
-    </section>
-</body>
-</html>
+            </form>
+        </section>
+    </body>
+    </html>
