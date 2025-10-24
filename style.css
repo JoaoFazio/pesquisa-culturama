@@ -93,7 +93,7 @@ input[type=color]{
     padding: 0 5px;
 }
 
-input:invalid,
+/* input:invalid,
 textarea:invalid,
 select:invalid{
     border-color: red;
@@ -103,6 +103,30 @@ input:valid,
 textarea:valid,
 select:valid{
     border-color: green;
+} */
+
+/* --- A SOLUÇÃO MODERNA E CORRETA --- */
+
+/* 1. Todos os campos começam cinzas (o padrão). */
+/* (Você já deve ter isso, mas garanta que não há cor aqui) */
+input, select, textarea {
+  border: 1px solid #cccccc;
+}
+
+/* 2. Fica VERMELHO apenas se for inválido E o usuário já interagiu. */
+input:user-invalid,
+textarea:user-invalid,
+select:user-invalid {
+  border-color: red;
+  /* (Opcional) Adicione um 'box-shadow' suave para destacar mais */
+  /* box-shadow: 0 0 5px rgba(255, 0, 0, 0.3); */
+}
+
+/* 3. Fica VERDE apenas se for válido E o usuário já interagiu. */
+input:user-valid,
+textarea:user-valid,
+select:user-valid {
+  border-color: green;
 }
 
 button{
