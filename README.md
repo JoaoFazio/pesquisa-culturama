@@ -53,7 +53,7 @@ cd nome-do-repositorio
 ```
 ## 👨‍💻 Autor
 
-Feito por João Gabriel.
+Feito por João Gabriel (Não autoral).
 
 * <a href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-fazio-861186338/" target="_blank">LinkedIn</a>
 * <a href="https://github.com/JoaoFazio" target="_blank">GitHub</a>
